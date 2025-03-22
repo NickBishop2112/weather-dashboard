@@ -9,6 +9,14 @@ namespace WeatherDashboard.API.Controllers;
 [Route("api/[controller]")]
 public class ForecastController(IForecastService forecastService) : ControllerBase
 {
+    /// <summary>
+    /// Retrieves the weather forecast for a specific location.
+    /// </summary>
+    /// <param name="location">The location to get the forecast for.</param>
+    /// <returns>The weather forecast details.</returns>
+    /// <response code="200">Returns the weather forecast details.</response>
+    /// <response code="400">If location is missing.</response>
+    /// <response code="500">If an unexpected error occurs.</response>
     [HttpGet("{location}")]
     public async Task<IActionResult> GetForecastDetails(string location)
     {

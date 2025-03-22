@@ -16,7 +16,7 @@ The Weather Forecast Dashboard contains the following features:
 git clone https://github.com/NickBishop2112/weather-dashboard
 ```
 ## Step 2 - Change the Open Weather API
-If required change the `ApiKey` located in the OpenWeatherMap section of the `app\WeatherDashboard.API\appsettings.json`.
+If needed to change the `ApiKey`. Go to the OpenWeatherMap section of the `app\WeatherDashboard.API\appsettings.json` and update the `ApiKey`.
 
 ## Step 3 - Run the app
 The instruction are:

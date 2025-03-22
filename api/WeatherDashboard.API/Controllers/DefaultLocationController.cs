@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using Serilog;
 using WeatherDashboard.API.Interfaces;
 
@@ -8,6 +9,14 @@ namespace WeatherDashboard.API.Controllers;
 [Route("api/[controller]")]
 public class DefaultLocationController(IDefaultLocationService defaultLocationService) : ControllerBase
 {
+    /// <summary>
+    /// Sets the default location.
+    /// </summary>
+    /// <param name="location">The location to set as default.</param>
+    /// <returns>A response indicating success or failure.</returns>
+    /// <response code="200">If the location is set successfully.</response>
+    /// <response code="400">if the location is missing</response>
+    /// <response code="500">If an unexpected error occurs.</response>
     [HttpPut("{location}")]
     public IActionResult SetLocation(string location)
     {
@@ -24,6 +33,12 @@ public class DefaultLocationController(IDefaultLocationService defaultLocationSe
         }
     }
     
+    /// <summary>
+    /// Retrieves the current default location.
+    /// </summary>
+    /// <returns>The current default location.</returns>
+    /// <response code="200">Returns the default location.</response>
+    /// <response code="500">If an unexpected error occurs.</response>
     [HttpGet()]
     public IActionResult GetLocation()
     {

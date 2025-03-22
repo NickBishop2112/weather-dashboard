@@ -1,0 +1,106 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]eploy/
+bin/
+obj/
+
+# User-specific files
+.vs/
+.vscode/
+.idea/
+
+# User-specific files on Windows
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# User-specific files on macOS
+.idea/
+*.swp
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files
+Thumbs.db
+ehthumbs.db
+
+# JetBrains Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# dotnet publish
+publish/
+
+# VS for Mac
+.vscode/
+
+# npm package and yarn
+node_modules/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+
+# .NET Core build output
+artifacts/
+
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Dependency directories (npm, yarn, etc.)
+.pnp/
+.pnp.js
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor specific files
+.vscode/
+.idea/
+
+# Coverage directory for test reports
+coverage/
+
+# Miscellaneous
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# React Native (if applicable)
+.expo/
+
+# Next.js (if applicable)
+.next/
+
+# Parcel-bundler cache (if applicable)
+.cache/
+
+# Storybook (if applicable)
+.out/
+
+# Temporary files
+*.swp
+*.swo
+output.log
+api/WeatherDashboard.API/location.txt

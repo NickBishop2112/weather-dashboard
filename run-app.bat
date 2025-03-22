@@ -9,8 +9,8 @@ start /B dotnet run --project .\api\WeatherDashboard.API\WeatherDashboard.API.cs
 start http://localhost:5002/swagger/index.html
 
 echo Build the databoard
-cd .\dashboard
-npm run dev
+cd .\dashboard\
+npm install --no-audit && npm run dev
 cd ..
 
 echo Both backend and frontend are running.

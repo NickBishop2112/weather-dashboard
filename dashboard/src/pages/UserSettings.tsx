@@ -11,12 +11,14 @@ export const UserSettings = () => {
         
         const location = locationRef.current?.value;  
         
+        // Che k if location is empty
         if (!location?.trim()) {
             alert("Location cannot be empty");
             locationRef.current?.focus();
             return;
         }
 
+        // Save location and navigate to forecasts
         await setLocation(location);
         navigate("/forecasts"); 
     };

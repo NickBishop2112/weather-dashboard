@@ -38,6 +38,7 @@ const WeatherForecasts = () => {
         }
     };
 
+    // Fetch forecasts when the refresh state is true
     useEffect(() => {
 
         if (!refresh)
@@ -55,6 +56,7 @@ const WeatherForecasts = () => {
     
     useEffect(() => {
         
+        // Get the default location
         const location = getLocation();   
                 
         location.then((data) => {            
@@ -66,12 +68,14 @@ const WeatherForecasts = () => {
             
             const location = locationRef.current?.value;  
             
+            // Check if location is empty
             if (!location?.trim()) {
                 alert("Location cannot be empty");
                 locationRef.current?.focus();
                 return;
             }
     
+            // refresh the grid with the forecasts
             setRefresh(true);    
         };
 
